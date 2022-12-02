@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang = "pl">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+ <script>function myFunction(){
+    var x = document.getElementById("nr").value;
+    var y = document.getElementById("first").value;
+    var z = document.getElementById("sec").value;
+    if(document.getElementById('m').checked)
+        a = "Mężczyzna";
+    else if(document.getElementById('k').checked)
+        a = "Kobieta";
+    window.alert("Następujące dane zostały zapisane \n"+"Imie: "+y+'\n'+"Nazwisko: "+z+'\n'+"Nr telefonu: "+x+"\n Płeć : " + a);
+ }
+ </script>   
+</head>
+
+<body>
+    <p class = "input">Imię</p>
+    
+<form class = "input"><input type = "text" id = "first">
+    <p class = "yt">Nazwisko</p>
+<input type = "text" id = "sec">
+    <p class = "yt">Nr telefonu</p>
+    <input type = "text" id = "nr">
+    <fieldset class = "xd">
+    <legend>Podaj Swoją Płeć</legend>
+
+    <div>
+      <input type="radio" id="m" name="drone" value="huey"
+             checked>
+      <label for="huey">Mężczyzna</label>
+    </div>
+
+    <div>
+      <input type="radio" id="k" name="drone" value="dewey">
+      <label for="dewey">Kobieta</label>
+    </div>
+
+</fieldset>
+
+</form>
+<button type = "button" class = "button" onclick="myFunction()">Zatwierdź</button>
+<a href="index.html">Wstecz</a>
+</body>
+
+</html>
